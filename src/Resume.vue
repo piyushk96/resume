@@ -1,27 +1,50 @@
 <template>
 	<div id="resume">
-		<HelloWorld msg="Welcome to Your Vue.js App"/>
+		<Header :data="resumeData.header" />
 	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue';
+import resumeData from './assets/data.json';
 
 export default {
 	name: 'Resume',
+
 	components: {
-		HelloWorld,
+		Header,
 	},
+
+	data() {
+		return {
+			resumeData,
 }
+	},
+};
 </script>
 
 <style>
-#app {
-	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+:root {
+	--main-color: #2F5496;
+	--dark-gray: #2E2E2E;
+	--light-gray: #666666;
+	--header-item-space: 0 0 .1cm;
+}
+
+#resume {
+	font-family: Lato, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
-	margin-top: 60px;
+	border: 1px solid black;
+	margin: auto;
+
+	/* A4 Paper with 1cm margins  */
+	width: 210mm;
+	height: 297mm;
+	padding: 1cm;
+}
+
+#resume * {
+	box-sizing: border-box;
 }
 </style>
