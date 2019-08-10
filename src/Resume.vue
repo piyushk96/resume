@@ -1,11 +1,17 @@
 <template>
 	<div id="resume">
 		<Header :data="resumeData.header" />
+		<div class="content-area">
+			<MainContent :data="resumeData.mainData" />
+			<Sidebar :data="resumeData.sidebar" />
+		</div>
 	</div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
+import MainContent from './components/MainContent';
+import Sidebar from './components/Sidebar';
 import resumeData from './assets/data.json';
 
 export default {
@@ -13,12 +19,14 @@ export default {
 
 	components: {
 		Header,
+		MainContent,
+		Sidebar,
 	},
 
 	data() {
 		return {
 			resumeData,
-}
+		}
 	},
 };
 </script>
@@ -29,6 +37,8 @@ export default {
 	--dark-gray: #2E2E2E;
 	--light-gray: #666666;
 	--header-item-space: 0 0 .1cm;
+	--main-content-width: 12cm;	/*11.89**/
+	--v-space: .7cm;
 }
 
 #resume {
@@ -46,5 +56,9 @@ export default {
 
 #resume * {
 	box-sizing: border-box;
+}
+
+.content-area {
+	display: flex;
 }
 </style>
