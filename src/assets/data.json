@@ -112,7 +112,14 @@
 	"sidebar": [
 		{
 			"title": "skills",
-			"subSections": []
+			"items": [
+				[
+					"C", "Python", "HTML", "SCSS", "JQuery", "VueJS", "KoaJS", "MySQL", "GraphQL", "ObjectionJS", "Socket.IO", "Git"
+				],
+				[
+					"C++", "Java (Core)", "CSS", "JavaScript", "NodeJS", "ExpressJS", "MarkoJS", "PostgrSQL", "TypeScript", "KnexJS", "Python", "Github"
+				]
+			]
 		},
 		{
 			"title": "education",

@@ -1,7 +1,13 @@
 <template>
 	<section :class="data.title">
 		<h3>{{ data.title | uppercase }}</h3>
+
+		<SkillsSubSection
+			v-if="data.title === 'skills'"
+			:items="data.items"
+		/>
 		<SubSection
+			v-else
 			v-for="(item, i) in data.subSections"
 			:key="i"
 			:data="item"
@@ -12,12 +18,14 @@
 
 <script>
 import SubSection from './SubSection';
+import SkillsSubSection from './SkillsSubSection';
 
 export default {
 	name: 'Section',
 
 	components: {
 		SubSection,
+		SkillsSubSection,
 	},
 
 	props: {
