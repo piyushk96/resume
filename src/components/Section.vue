@@ -1,6 +1,6 @@
 <template>
      <section>
-          <h3>{{ data.title }}</h3>
+          <h3>{{ data.title | uppercase }}</h3>
           <!-- <SubSection
                v-for="(item, i) in data.subSections"
                :key="i"
