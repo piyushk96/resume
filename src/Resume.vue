@@ -41,8 +41,7 @@ export default {
 	--column-space: .7cm;
 	--section-between-space: .4cm 0;
 	--subsection-space: .3cm 0;
-	--section-between-space: .5cm;
-	--subsection-header-after: 0 0 .05cm;
+	--subsection-header-after: 0 0 .1cm;
 }
 
 #resume {

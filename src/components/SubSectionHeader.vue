@@ -60,7 +60,8 @@ header {
 .right {
 	float: right;
 	font-size: 9pt;
-	color: var(--light-gray)
+	color: var(--light-gray);
+	line-height: 14pt;
 }
 .title {
 	font-size: 13pt;
