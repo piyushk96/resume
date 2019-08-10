@@ -6,25 +6,97 @@
 	},
 	"mainData": [
 		{
-			"title": "Experience",
-			"subSections": []
+			"title": "experience",
+			"subSections": [
+				{
+					"header": {
+						"title": "Smartprix Web Pvt. Ltd.",
+						"subTitle": "Software Developer",
+						"date": [
+							"2 july 2018",
+							"present"
+						],
+						"location": "Noida, IN"
+					}
+				},
+				{
+					"header": {
+						"title": "Cread",
+						"subTitle": "Web Developer Intern",
+						"date": [
+							"march 2018",
+							"may 2018"
+						],
+						"location": "Delhi, IN"
+					}
+				},
+				{
+					"header": {
+						"title": "Hindustan Petroleum Corp. Ltd.",
+						"subTitle": "Software Developer Intern",
+						"date": [
+							"15 june 2017",
+							"31 july 2017"
+						],
+						"location": "Delhi, IN"
+					}
+				}
+			]
 		},
 		{
-			"title": "Projects",
-			"subSections": []
+			"title": "projects",
+			"subSections": [
+				{
+					"header": {
+						"title": "Criminal Identification System",
+						"date": [
+							"january 2018",
+							"april 2018"
+						]
+					},
+					"content": "The system provides a complete solution for a static image or video surveillance based face detection and recognition of criminals with higher accuracy and better response rate. Technologies: Python, OpenCV, Haar Cascade, MySQL, Tkinter"
+				},
+				{
+					"header": {
+						"title": "Chat Application",
+						"date": [
+							"june 2017",
+							"july 2017"
+						]
+					},
+					"content": "A web based Chat Application that provides features like One to One chat, Broadcast message to multiple people, Media sharing, Smart status etc. Technologies: AngularJS, NodeJS, Bootstrap, MySQL, Socket.IO, JavaScript, JQuery"
+				},
+				{
+					"header": {
+						"title": "LetsSchedule",
+						"date": [
+							"august 2016",
+							"september 2016"
+						]
+					},
+					"content": "A task scheduling web application. The application can be used to schedule tasks with smart filters and reminders. Technologies: HTML, CSS, JQuery, NodeJS, and MySQL"
+				},
+				{
+					"header": {
+						"title": "ChatWithWiki",
+						"date": "january 2015"
+					},
+					"content": "A basic chatbot for Facebook Messenger that gives Wikipedia results based on queries. Technologies: JavaScript and NodeJS"
+				}
+			]
 		}
 	],
 	"sidebar": [
 		{
-			"title": "Skills",
+			"title": "skills",
 			"subSections": []
 		},
 		{
-			"title": "Education",
+			"title": "education",
 			"subSections": []
 		},
 		{
-			"title": "Awards",
+			"title": "awards",
 			"subSections": []
 		}
 	]
