@@ -40,6 +40,9 @@ h3 {
      font-size: 16pt;
 }
 section {
-     margin-top: var(--section-between-space);
+     margin: var(--section-between-space);
+}
+section:last-child {
+     margin: 0;
 }
 </style>

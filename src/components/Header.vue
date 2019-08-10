@@ -30,8 +30,8 @@ h1 {
 }
 h2 {
 	color: var(--dark-gray);
-	font-size: 16pt;
-	line-height: 16pt;
+	font-size: 17pt;
+	line-height: 17pt;
 }
 p {
 	color: var(--light-gray);

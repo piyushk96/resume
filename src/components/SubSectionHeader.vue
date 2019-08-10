@@ -30,7 +30,7 @@ export default {
      data() {
           return {
                numOfItems: Object.keys(this.headerData).length,
-          }
+          };
      },
 
      methods: {
@@ -54,16 +54,21 @@ export default {
 </script>
 
 <style scoped>
+header {
+     margin: var(--subsection-header-after);
+}
 .right {
      float: right;
      font-size: 9pt;
-     color: var(--dark-gray)
+     color: var(--light-gray)
 }
 .title {
      font-size: 13pt;
      font-weight: 800;
+     color: var(--dark-gray);
 }
 .sub-title {
      font-size: 10pt;
+     color: var(--dark-gray);
 }
 </style>
