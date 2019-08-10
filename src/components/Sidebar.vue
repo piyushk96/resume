@@ -1,35 +1,35 @@
 <template>
-     <div id="sidebar">
-          <Section
-               v-for="(item, i) in data"
-               :key="i"
-               :data="item"
-          />
-     </div>
+	<div id="sidebar">
+		<Section
+			v-for="(item, i) in data"
+			:key="i"
+			:data="item"
+		/>
+	</div>
 </template>
 
 <script>
 import Section from './Section';
 
 export default {
-     name: 'Sidebar',
+	name: 'Sidebar',
 
-     components: {
-          Section,
-     },
+	components: {
+		Section,
+	},
 
-     props: {
-          data: {
-               type: Array,
-               default: () => [],
-          },
-     },
+	props: {
+		data: {
+			type: Array,
+			default: () => [],
+		},
+	},
 }
 </script>
 
 <style scoped>
 #sidebar {
-     padding-left: var(--column-space);
-     flex: 1;
+	padding-left: var(--column-space);
+	flex: 1;
 }
 </style>

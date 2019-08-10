@@ -1,74 +1,74 @@
 <template>
-     <header>
-          <div>
-               <span class="title">{{ headerData.title }}</span>
-               <span class="right">
-                    {{ numOfItems === 2 ? formatDate(headerData.date) : headerData.location }}
-               </span>
-          </div>
-          <div v-if="numOfItems === 4">
-               <span class="sub-title">{{ headerData.subTitle }}</span>
-               <span class="right">{{ formatDate(headerData.date) }}</span>
-          </div>
-     </header>
+	<header>
+		<div>
+			<span class="title">{{ headerData.title }}</span>
+			<span class="right">
+				{{ numOfItems === 2 ? formatDate(headerData.date) : headerData.location }}
+			</span>
+		</div>
+		<div v-if="numOfItems === 4">
+			<span class="sub-title">{{ headerData.subTitle }}</span>
+			<span class="right">{{ formatDate(headerData.date) }}</span>
+		</div>
+	</header>
 </template>
 
 <script>
 import moment from 'moment';
 
 export default {
-     name: 'SubSectionHeader',
+	name: 'SubSectionHeader',
 
-     props: {
-          headerData: {
-               type: Object,
-               default: () => {},
-          },
-          title: String,
-     },
+	props: {
+		headerData: {
+			type: Object,
+			default: () => {},
+		},
+		title: String,
+	},
 
-     data() {
-          return {
-               numOfItems: Object.keys(this.headerData).length,
-          };
-     },
+	data() {
+		return {
+			numOfItems: Object.keys(this.headerData).length,
+		};
+	},
 
-     methods: {
-          formatDate(date) {
-               const dateFormat = 'MMM. YYYY';
-               if (!Array.isArray(date)) date = [date];
-               let dateStr = moment(new Date(date[0])).format(dateFormat);
+	methods: {
+		formatDate(date) {
+			const dateFormat = 'MMM. YYYY';
+			if (!Array.isArray(date)) date = [date];
+			let dateStr = moment(new Date(date[0])).format(dateFormat);
 
-               if (date.length === 2) {
-                    if (date[1] === 'present') {
-                         dateStr += ' - Present';
-                    }
-                    else {
-                         dateStr += ` - ${moment(new Date(date[1])).format(dateFormat)}`;
-                    }
-               }
-               return dateStr;
-          }
-     }
+			if (date.length === 2) {
+				if (date[1] === 'present') {
+					dateStr += ' - Present';
+				}
+				else {
+					dateStr += ` - ${moment(new Date(date[1])).format(dateFormat)}`;
+				}
+			}
+			return dateStr;
+		}
+	}
 }
 </script>
 
 <style scoped>
 header {
-     margin: var(--subsection-header-after);
+	margin: var(--subsection-header-after);
 }
 .right {
-     float: right;
-     font-size: 9pt;
-     color: var(--light-gray)
+	float: right;
+	font-size: 9pt;
+	color: var(--light-gray)
 }
 .title {
-     font-size: 13pt;
-     font-weight: 800;
-     color: var(--dark-gray);
+	font-size: 13pt;
+	font-weight: 800;
+	color: var(--dark-gray);
 }
 .sub-title {
-     font-size: 10pt;
-     color: var(--dark-gray);
+	font-size: 10pt;
+	color: var(--dark-gray);
 }
 </style>

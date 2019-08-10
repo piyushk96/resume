@@ -1,34 +1,34 @@
 <template>
-     <div id="main-content">
-          <Section
-               v-for="(item, i) in data"
-               :key="i"
-               :data="item"
-          />
-     </div>
+	<div id="main-content">
+		<Section
+			v-for="(item, i) in data"
+			:key="i"
+			:data="item"
+		/>
+	</div>
 </template>
 
 <script>
 import Section from './Section';
 
 export default {
-     name: 'MainContent',
+	name: 'MainContent',
 
-     components: {
-          Section,
-     },
+	components: {
+		Section,
+	},
 
-     props: {
-          data: {
-               type: Array,
-               default: () => [],
-          },
-     },
+	props: {
+		data: {
+			type: Array,
+			default: () => [],
+		},
+	},
 }
 </script>
 
 <style scoped>
 #main-content {
-     width: var(--main-content-width);
+	width: var(--main-content-width);
 }
 </style>
