@@ -36,9 +36,10 @@ export default {
 	--main-color: #2F5496;
 	--dark-gray: #2E2E2E;
 	--light-gray: #666666;
-	--header-item-space: 0 0 .1cm;
+	--header-item-space: 0 0 .15cm;
 	--main-content-width: 12cm;	/*11.89**/
-	--v-space: .7cm;
+	--column-space: .7cm;
+	--section-between-space: .5cm;
 }
 
 #resume {

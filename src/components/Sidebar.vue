@@ -29,7 +29,7 @@ export default {
 
 <style scoped>
 #sidebar {
-     padding-left: var(--v-space);
+     padding-left: var(--column-space);
      flex: 1;
 }
 </style>

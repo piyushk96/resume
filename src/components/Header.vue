@@ -19,10 +19,7 @@ export default {
 };
 </script>
 
-<style>
-header {
-	margin-bottom: .5cm;
-}
+<style scoped>
 header * {
 	margin: var(--header-item-space);
 }
