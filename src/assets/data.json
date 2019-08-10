@@ -127,7 +127,22 @@
 		},
 		{
 			"title": "awards",
-			"subSections": []
+			"subSections": [
+				{
+					"header": {
+						"title": "eYantra",
+						"date": "february 2016"
+					},
+					"content": "Robotics Competition by IIT Bombay <br>15<sup>th</sup> Position in Hotel Guest Service Theme."
+				},
+				{
+					"header": {
+						"title": "Code Golf",
+						"date": "may 2015"
+					},
+					"content": "Techsurge & Mridang '15 <br>2<sup>nd</sup> Position"
+				}
+			]
 		}
 	]
 }
