@@ -34,6 +34,7 @@ export default {
 			default: () => ({
 				title: "",
 				subSections: [],
+				items: [],
 			}),
 		},
 	},

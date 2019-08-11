@@ -40,7 +40,10 @@ export default {
 	props: {
 		data: {
 			type: Object,
-			default: () => {},
+			default: () => ({
+				header: {},
+				content: "",
+			}),
 		},
 		title: String,
 	},
