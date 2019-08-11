@@ -45,6 +45,10 @@ export default {
 	--subsection-header-after: 0 0 .05cm;
 }
 
+body {
+	margin: 0;
+}
+
 #resume {
 	font-family: Lato, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -64,5 +68,12 @@ export default {
 
 .content-area {
 	display: flex;
+}
+
+@media print {
+	#resume {
+		border: none;
+		margin-top: 4mm;
+	}
 }
 </style>
