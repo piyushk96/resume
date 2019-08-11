@@ -13,6 +13,7 @@
 
 <script>
 import SubSectionHeader from './SubSectionHeader';
+import {getDateString} from '../utils';
 
 export default {
 	name: 'SubSection',
@@ -27,6 +28,12 @@ export default {
 			default: () => {},
 		},
 		title: String,
+	},
+
+	methods: {
+		formatDate(date) {
+			return getDateString(date);
+		},
 	},
 }
 </script>
