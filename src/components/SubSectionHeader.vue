@@ -5,9 +5,7 @@
 				v-if="headerData.link"
 				:href="headerData.link"
 				class="title"
-			>
-				{{ headerData.title }}
-			</a>
+				v-html="headerData.title" />
 			<span v-else class="title" v-html="headerData.title" />
 
 			<span class="right">

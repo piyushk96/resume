@@ -134,17 +134,20 @@
 				{
 					"title": "Github",
 					"icon": ["fab", "github"],
-					"value": "piyushk96"
+					"value": "piyushk96",
+					"link": "https://github.com/piyushk96"
 				},
 				{
 					"title": "Linkedin",
 					"icon": ["fab", "linkedin"],
-					"value": "piyushk96"
+					"value": "piyushk96",
+					"link": "https://www.linkedin.com/in/piyushk96/"
 				},
 				{
 					"title": "Facebook",
 					"icon": ["fab", "facebook"],
-					"value": "piyushk96"
+					"value": "piyushk96",
+					"link": "https://www.facebook.com/piyushk96"
 				}
 			]
 		},
@@ -166,7 +169,8 @@
 					"header": {
 						"title": "Maharaja Agrasen Institute of Technology, <br>GGSIPU",
 						"subTitle": "Bachelors of Technology (Information Technology)",
-						"location": "Delhi, IN"
+						"location": "Delhi, IN",
+						"link": "https://www.mait.ac.in/"
 					},
 					"content": [{
 						"date": [
@@ -180,7 +184,8 @@
 					"header": {
 						"title": "Coding Blocks",
 						"subTitle": "Web Development Training",
-						"location": "Delhi, IN"
+						"location": "Delhi, IN",
+						"link": "https://codingblocks.com/"
 					},
 					"content": [{
 						"date": [
@@ -193,7 +198,8 @@
 					"header": {
 						"title": "Kulachi Hansraj Model School",
 						"subTitle": "Secondary and Senior Secondary",
-						"location": "Delhi, IN"
+						"location": "Delhi, IN",
+						"link": "http://khms.ac.in/"
 					},
 					"content": [
 						{

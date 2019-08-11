@@ -14,7 +14,8 @@
 		<ul v-else class="single-col">
 			<li v-for="(item, i) in items" :key="i">
 				<font-awesome :icon="item.icon" />
-				<span>{{ item.value }}</span>
+				<a v-if="item.link" :href="item.link">{{ item.value }}</a>
+				<span v-else>{{ item.value }}</span>
 			</li>
 		</ul>
 	</div>
@@ -63,7 +64,12 @@ li {
 }
 li svg {
 	color: var(--main-color);
-	margin: 0 .3cm 0 .2cm;
+	margin: 0 .3cm 0 .1cm;
 	font-size: 1.1em;
+	width: .5cm !important;
+}
+a {
+	text-decoration: none;
+	color: var(--light-gray)
 }
 </style>
