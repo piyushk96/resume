@@ -37,11 +37,13 @@ export default {
 	--dark-gray: #2E2E2E;
 	--light-gray: #666666;
 	--header-item-space: 0 0 .15cm;
-	--main-content-width: 12.5cm;	/*11.89**/
+	--main-content-width: 12.3cm;	/*11.89**/
 	--column-space: .7cm;
-	--section-between-space: .4cm 0;
-	--subsection-space: .3cm 0;
-	--subsection-header-after: 0 0 .1cm;
+	--section-between-space: .3cm 0;
+	--subsection-space: .25cm 0;
+	--education-subsection-space: .25cm 0 .3cm;
+	/* --project-subsection-space: .15cm 0; */
+	--subsection-header-after: 0 0 .05cm;
 }
 
 #resume {

@@ -25,13 +25,13 @@ header * {
 }
 h1 {
 	color: var(--main-color);
-	font-size: 36pt;
-	line-height: 36pt;
+	font-size: 32pt;
+	line-height: 32pt;
 }
 h2 {
 	color: var(--dark-gray);
-	font-size: 17pt;
-	line-height: 17pt;
+	font-size: 16pt;
+	line-height: 16pt;
 }
 p {
 	color: var(--light-gray);
