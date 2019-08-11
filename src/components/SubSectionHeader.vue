@@ -8,14 +8,15 @@
 			>
 				{{ headerData.title }}
 			</a>
-			<span v-else class="title">{{ headerData.title }}</span>
+			<span v-else class="title" v-html="headerData.title" />
+
 			<span class="right">
 				{{ numOfItems === 2 ? formatDate(headerData.date) : headerData.location }}
 			</span>
 		</div>
-		<div v-if="numOfItems === 4">
-			<span class="sub-title">{{ headerData.subTitle }}</span>
-			<span class="right">{{ formatDate(headerData.date) }}</span>
+		<div v-if="numOfItems > 2">
+			<i class="sub-title">{{ headerData.subTitle }}</i>
+			<span v-if="numOfItems === 4" class="right">{{ formatDate(headerData.date) }}</span>
 		</div>
 	</header>
 </template>
@@ -36,7 +37,7 @@ export default {
 
 	data() {
 		return {
-			numOfItems: Object.keys(this.headerData).length,
+			numOfItems: Object.keys(this.headerData).filter(key => key !== 'link').length,
 		};
 	},
 
@@ -66,8 +67,13 @@ a {
 	font-weight: 800;
 	color: var(--dark-gray);
 }
+.education .title {
+	font-size: 12pt;
+	font-weight: 700;
+}
 .sub-title {
 	font-size: 10pt;
-	color: var(--dark-gray);
+	color: var(--main-color);
+	font-weight: 600;
 }
 </style>

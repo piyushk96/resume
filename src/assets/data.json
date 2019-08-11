@@ -126,7 +126,60 @@
 		},
 		{
 			"title": "education",
-			"subSections": []
+			"subSections": [
+				{
+					"header": {
+						"title": "Maharaja Agrasen Institute of Technology, <br>GGSIPU",
+						"subTitle": "Bachelors of Technology (Information Technology)",
+						"location": "Delhi, IN"
+					},
+					"content": [{
+						"date": [
+							"august 2014",
+							"june 2018"
+						],
+						"aggregate": "82.1%"
+					}]
+				},
+				{
+					"header": {
+						"title": "Coding Blocks",
+						"subTitle": "Web Development Training",
+						"location": "Delhi, IN"
+					},
+					"content": [{
+						"date": [
+							"june 2016",
+							"august 2016"
+						]
+					}]
+				},
+				{
+					"header": {
+						"title": "Kulachi Hansraj Model School",
+						"subTitle": "Secondary and Senior Secondary",
+						"location": "Delhi, IN"
+					},
+					"content": [
+						{
+							"date": [
+								"july 2013",
+								"june 2014"
+							],
+							"class": "12",
+							"aggregate": "91.8%"
+						},
+						{
+							"date": [
+								"july 2011",
+								"june 2012"
+							],
+							"class": "10",
+							"aggregate": "9 CGPA"
+						}
+					]
+				}
+			]
 		},
 		{
 			"title": "awards",

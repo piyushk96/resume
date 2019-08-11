@@ -4,7 +4,22 @@
 			:headerData="data.header"
 			:title="title"
 		/>
-		<ul class="content" v-if="Array.isArray(data.content)">
+		<div class="content" v-if="title === 'education'">
+			<div
+				v-for="(item, i) in data.content"
+				:key="i"
+				style="display: flex; justify-content: space-between"
+			>
+				<span>{{ formatDate(item.date) }}</span>
+				<template v-if="item.class">
+					<span>-</span>
+					<span>{{ item.class }}<sup>th</sup></span>
+					<span>-</span>
+				</template>
+				<span class="right">{{ item.aggregate }}</span>
+			</div>
+		</div>
+		<ul class="content" v-else-if="Array.isArray(data.content)">
 			<li v-for="(item, i) in data.content" :key="i" v-html="item" />
 		</ul>
 		<p class="content" v-else v-html="data.content" />
@@ -42,6 +57,9 @@ export default {
 .sub-section {
 	margin: var(--subsection-space);
 }
+.education .sub-section {
+	margin: var(--education-subsection-space);
+}
 .content {
 	margin: 0;
 	color: var(--light-gray);
@@ -56,5 +74,9 @@ ul.content li {
 }
 .content >>> b {
 	font-weight: 800;
+}
+.right {
+	text-align: right;
+	width: 1.5cm;
 }
 </style>
