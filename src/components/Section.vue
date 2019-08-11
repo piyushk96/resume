@@ -1,9 +1,9 @@
 <template>
-	<section :class="data.title">
+	<section :class="data.title.replace(' ', '_')">
 		<h3>{{ data.title | uppercase }}</h3>
 
-		<SkillsSubSection
-			v-if="data.title === 'skills'"
+		<ListSubSection
+			v-if="!!data.items"
 			:items="data.items"
 		/>
 		<SubSection
@@ -18,24 +18,20 @@
 
 <script>
 import SubSection from './SubSection';
-import SkillsSubSection from './SkillsSubSection';
+import ListSubSection from './ListSubSection';
 
 export default {
 	name: 'Section',
 
 	components: {
 		SubSection,
-		SkillsSubSection,
+		ListSubSection,
 	},
 
 	props: {
 		data: {
 			type: Object,
-			default: () => ({
-				title: "",
-				subSections: [],
-				items: [],
-			}),
+			default: () => {},
 		},
 	},
 }

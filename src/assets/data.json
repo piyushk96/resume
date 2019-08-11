@@ -114,13 +114,48 @@
 	],
 	"sidebar": [
 		{
+			"title": "personal details",
+			"items": [
+				{
+					"title": "Address",
+					"icon": "map-marker-alt",
+					"value": "1994 Outram Lines Kingsway Camp, G.T.B. Nagar, Delhi - 110009"
+				},
+				{
+					"title": "Phone",
+					"icon": "phone-alt",
+					"value": "(+91) 9873609932"
+				},
+				{
+					"title": "Email",
+					"icon": "at",
+					"value": "kakkarpiyush96@gmail.com"
+				},
+				{
+					"title": "Github",
+					"icon": ["fab", "github"],
+					"value": "piyushk96"
+				},
+				{
+					"title": "Linkedin",
+					"icon": ["fab", "linkedin"],
+					"value": "piyushk96"
+				},
+				{
+					"title": "Facebook",
+					"icon": ["fab", "facebook"],
+					"value": "piyushk96"
+				}
+			]
+		},
+		{
 			"title": "skills",
 			"items": [
 				[
-					"C", "Python", "HTML", "SCSS", "JQuery", "VueJS", "KoaJS", "MySQL", "GraphQL", "ObjectionJS", "Socket.IO", "Git"
+					"C", "Python", "HTML", "SCSS", "JQuery", "VueJS", "KoaJS", "MySQL", "GraphQL", "ObjectionJS", "Socket.IO"
 				],
 				[
-					"C++", "Java (Core)", "CSS", "JavaScript", "NodeJS", "ExpressJS", "MarkoJS", "PostgrSQL", "TypeScript", "KnexJS", "Python", "Github"
+					"C++", "Java (Core)", "CSS", "JavaScript", "NodeJS", "ExpressJS", "MarkoJS", "PostgreSQL", "TypeScript", "KnexJS", "Git"
 				]
 			]
 		},
