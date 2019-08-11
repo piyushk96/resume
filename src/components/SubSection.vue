@@ -66,7 +66,7 @@ export default {
 .content {
 	margin: 0;
 	color: var(--light-gray);
-	font-size: 10pt;
+	font-size: 10.5pt;
 }
 ul.content {
 	padding-left: .4cm;

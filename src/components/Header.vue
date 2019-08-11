@@ -35,6 +35,6 @@ h2 {
 }
 p {
 	color: var(--light-gray);
-	font-size: 10pt;
+	font-size: 11pt;
 }
 </style>

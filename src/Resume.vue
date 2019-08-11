@@ -73,7 +73,7 @@ body {
 @media print {
 	#resume {
 		border: none;
-		margin-top: 4mm;
+		margin-top: 2mm;
 	}
 }
 </style>

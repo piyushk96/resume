@@ -70,7 +70,7 @@ a {
 	font-weight: 700;
 }
 .sub-title {
-	font-size: 10pt;
+	font-size: 10.75pt;
 	color: var(--main-color);
 	font-weight: 600;
 }
