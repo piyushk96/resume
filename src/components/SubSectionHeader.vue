@@ -1,7 +1,14 @@
 <template>
 	<header>
 		<div>
-			<span class="title">{{ headerData.title }}</span>
+			<a
+				v-if="headerData.link"
+				:href="headerData.link"
+				class="title"
+			>
+				{{ headerData.title }}
+			</a>
+			<span v-else class="title">{{ headerData.title }}</span>
 			<span class="right">
 				{{ numOfItems === 2 ? formatDate(headerData.date) : headerData.location }}
 			</span>

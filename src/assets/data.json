@@ -82,7 +82,8 @@
 						"date": [
 							"january 2018",
 							"april 2018"
-						]
+						],
+						"link": "https://github.com/piyushk96/Criminal-Identification-System"
 					},
 					"content": "The system provides a complete solution for a static image or video surveillance based face detection and recognition of criminals with higher accuracy and better response rate. <br><b>Technologies:</b> Python, OpenCV, Haar Cascade, MySQL, Tkinter"
 				},
@@ -92,7 +93,8 @@
 						"date": [
 							"june 2017",
 							"july 2017"
-						]
+						],
+						"link": "https://github.com/piyushk96/chat-application"
 					},
 					"content": "A web based Chat Application that provides features like One to One chat, Broadcast message to multiple people, Media sharing, Smart status etc. <br><b>Technologies:</b> AngularJS, NodeJS, MySQL, Socket.IO, JavaScript, JQuery"
 				},
@@ -102,7 +104,8 @@
 						"date": [
 							"august 2016",
 							"september 2016"
-						]
+						],
+						"link": "https://github.com/piyushk96/LetsSchedule"
 					},
 					"content": "A task scheduling web application that can be used to schedule tasks with smart filters and reminders. <br><b>Technologies:</b> HTML, CSS, JQuery, NodeJS, and MySQL"
 				}
