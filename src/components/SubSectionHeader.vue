@@ -64,6 +64,9 @@ export default {
 header {
 	margin: var(--subsection-header-after);
 }
+a {
+	text-decoration: none;
+}
 .right {
 	float: right;
 	font-size: 9pt;

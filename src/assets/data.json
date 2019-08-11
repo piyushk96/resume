@@ -134,14 +134,16 @@
 				{
 					"header": {
 						"title": "eYantra",
-						"date": "february 2016"
+						"date": "february 2016",
+						"link": "http://portal.e-yantra.org/"
 					},
 					"content": "Robotics Competition by IIT Bombay <br>15<sup>th</sup> Position in Hotel Guest Service Theme."
 				},
 				{
 					"header": {
 						"title": "Code Golf",
-						"date": "may 2015"
+						"date": "may 2015",
+						"link": "https://drive.google.com/open?id=0B6Qw7TSO_7LnMERCUEJDZzF5M1U"
 					},
 					"content": "Techsurge & Mridang '15 <br>2<sup>nd</sup> Position"
 				}
