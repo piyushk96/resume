@@ -1,4 +1,6 @@
 # resume-vue
+My Resume built using vue
+
 
 ### Compiles and hot-reloads for development
 ```
