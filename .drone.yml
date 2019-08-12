@@ -3,7 +3,7 @@ name: default
 
 steps:
   - name: build
-    image: vue/cli
+    image: node
     commands:
       - yarn build
 
