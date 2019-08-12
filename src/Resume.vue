@@ -70,6 +70,11 @@ body {
 	display: flex;
 }
 
+@page {
+	margin: 0;
+	size: A4;
+}
+
 @media print {
 	#resume {
 		border: none;

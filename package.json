@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:pdf": "yarn build && google-chrome --headless --disable-gpu --print-to-pdf=./dist/Piyush_Kakkar_Resume.pdf ./dist/index.html"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
