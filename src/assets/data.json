@@ -117,9 +117,9 @@
 			"title": "personal details",
 			"items": [
 				{
-					"title": "Address",
-					"icon": "map-marker-alt",
-					"value": "1994 Outram Lines Kingsway Camp, G.T.B. Nagar, Delhi - 110009"
+					"title": "Email",
+					"icon": "at",
+					"value": "kakkarpiyush96@gmail.com"
 				},
 				{
 					"title": "Phone",
@@ -127,21 +127,21 @@
 					"value": "(+91) 9873609932"
 				},
 				{
-					"title": "Email",
-					"icon": "at",
-					"value": "kakkarpiyush96@gmail.com"
-				},
-				{
-					"title": "Github",
-					"icon": ["fab", "github"],
-					"value": "piyushk96",
-					"link": "https://github.com/piyushk96"
+					"title": "Address",
+					"icon": "map-marker-alt",
+					"value": "1994 Outram Lines Kingsway Camp, G.T.B. Nagar, Delhi - 110009"
 				},
 				{
 					"title": "Linkedin",
 					"icon": ["fab", "linkedin"],
 					"value": "piyushk96",
 					"link": "https://www.linkedin.com/in/piyushk96/"
+				},
+				{
+					"title": "Github",
+					"icon": ["fab", "github"],
+					"value": "piyushk96",
+					"link": "https://github.com/piyushk96"
 				},
 				{
 					"title": "Facebook",
@@ -155,10 +155,10 @@
 			"title": "skills",
 			"items": [
 				[
-					"C", "Python", "HTML", "SCSS", "JQuery", "VueJS", "KoaJS", "MySQL", "GraphQL", "ObjectionJS", "Socket.IO"
+					"HTML", "SCSS", "JQuery", "ExpressJS", "VueJS", "C", "MySQL", "GraphQL", "Python", "ObjectionJS", "Socket.IO"
 				],
 				[
-					"C++", "Java (Core)", "CSS", "JavaScript", "NodeJS", "ExpressJS", "MarkoJS", "PostgreSQL", "TypeScript", "KnexJS", "Git"
+					"CSS", "JavaScript", "NodeJS", "KoaJS", "MarkoJS", "C++", "PostgreSQL", "TypeScript", "Java (Core)", "KnexJS", "Git"
 				]
 			]
 		},
