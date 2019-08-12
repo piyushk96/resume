@@ -169,8 +169,7 @@
 					"header": {
 						"title": "Maharaja Agrasen Institute of Technology, <br>GGSIPU",
 						"subTitle": "Bachelors of Technology (Information Technology)",
-						"location": "Delhi, IN",
-						"link": "https://www.mait.ac.in/"
+						"location": "Delhi, IN"
 					},
 					"content": [{
 						"date": [
@@ -184,8 +183,7 @@
 					"header": {
 						"title": "Coding Blocks",
 						"subTitle": "Web Development Training",
-						"location": "Delhi, IN",
-						"link": "https://codingblocks.com/"
+						"location": "Delhi, IN"
 					},
 					"content": [{
 						"date": [
@@ -198,8 +196,7 @@
 					"header": {
 						"title": "Kulachi Hansraj Model School",
 						"subTitle": "Secondary and Senior Secondary",
-						"location": "Delhi, IN",
-						"link": "http://khms.ac.in/"
+						"location": "Delhi, IN"
 					},
 					"content": [
 						{
