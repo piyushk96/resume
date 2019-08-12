@@ -78,6 +78,10 @@ ul.content li {
 .content >>> b {
 	font-weight: 800;
 }
+.content >>> a {
+	text-decoration: none;
+	color: var(--light-gray);
+}
 .right {
 	text-align: right;
 	width: 1.5cm;
