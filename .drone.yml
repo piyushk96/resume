@@ -1,0 +1,13 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: build
+    image: vue/cli
+    commands:
+      - yarn build
+
+trigger:
+  event:
+    exclude:
+      - tag
