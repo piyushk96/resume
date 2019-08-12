@@ -5,6 +5,7 @@ steps:
   - name: build
     image: node
     commands:
+      - yarn
       - yarn build
 
 trigger:
