@@ -11,8 +11,7 @@ steps:
   - name: create_pdf
     image: justinribeiro/chrome-headless
     commands:
-      # - sudo chown root /opt/google/chrome/chrome-sandbox
-      # - sudo chmod 4755 /opt/google/chrome/chrome-sandbox
+      - chmod 777 -R ./
       - google-chrome --headless --disable-gpu --no-sandbox --disable-setuid-sandbox --print-to-pdf=./dist/Piyush_Kakkar_Resume.pdf ./dist/index.html
 
   - name: release
