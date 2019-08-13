@@ -21,5 +21,21 @@ steps:
       files:
         - dist/Piyush_Kakkar_Resume.pdf
 
+  - name: commit-and-push-pdf
+    image: docker:git
+    environment:
+      GITHUB_TOKEN:
+        from_secret: github_token
+    commands:
+      - git checkout gh-pages
+      - mv dist/Piyush_Kakkar_Resume.pdf ./
+      - git config user.email "kakkarpiyush96@gmail.com"
+      - git config user.name "Piyush Kakkar"
+      - git add --all
+      - git commit -m "Updating Resume, `date`"
+      - git remote add origin-resume https://$GITHUB_TOKEN@github.com/$DRONE_REPO.git > /dev/null 2>&1
+      - git push --set-upstream origin-resume master
+
+
 trigger:
   event: tag
