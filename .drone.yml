@@ -11,9 +11,9 @@ steps:
   - name: create_pdf
     image: justinribeiro/chrome-headless
     commands:
-      - sudo chown root /opt/google/chrome/chrome-sandbox
-      - sudo chmod 4755 /opt/google/chrome/chrome-sandbox
-      - google-chrome --headless --disable-gpu --print-to-pdf=./dist/Piyush_Kakkar_Resume.pdf ./dist/index.html
+      # - sudo chown root /opt/google/chrome/chrome-sandbox
+      # - sudo chmod 4755 /opt/google/chrome/chrome-sandbox
+      - google-chrome --headless --disable-gpu --no-sandbox --disable-setuid-sandbox --print-to-pdf=./dist/Piyush_Kakkar_Resume.pdf ./dist/index.html
 
   - name: release
     image: plugins/github-release
@@ -22,6 +22,13 @@ steps:
         from_secret: github_token
       files:
         - dist/Piyush_Kakkar_Resume.pdf
+    when:
+      event:
+      - tag
+      - promote
+      target:
+      - build
+
 
   - name: commit-and-push-pdf
     image: docker:git
@@ -37,7 +44,9 @@ steps:
       - git commit -m "Updating Resume, `date`"
       - git remote add origin-resume https://$GITHUB_TOKEN@github.com/$DRONE_REPO.git > /dev/null 2>&1
       - git push --set-upstream origin-resume master
-
-
-trigger:
-  event: tag
+  when:
+    event:
+    - tag
+    - promote
+    target:
+    - build
