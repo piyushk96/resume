@@ -8,7 +8,10 @@ steps:
       - yarn
       - yarn build
 
+  - name: create_pdf
+    image: justinribeiro/chrome-headless
+    commands:
+      - google-chrome --headless --disable-gpu --print-to-pdf=./dist/Piyush_Kakkar_Resume.pdf ./dist/index.html
+
 trigger:
-  event:
-    exclude:
-      - tag
+  event: tag
