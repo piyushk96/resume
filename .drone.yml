@@ -8,10 +8,14 @@ steps:
       - yarn
       - yarn build
 
+  - name: permissions
+    image: alpine:latest
+    commands:
+      - chmod 777 -R ./dist
+
   - name: create_pdf
     image: justinribeiro/chrome-headless
     commands:
-      - chmod 777 -R ./
       - google-chrome --headless --disable-gpu --no-sandbox --disable-setuid-sandbox --print-to-pdf=./dist/Piyush_Kakkar_Resume.pdf ./dist/index.html
 
   - name: release
