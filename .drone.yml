@@ -32,7 +32,7 @@ steps:
       - git add --all
       - git commit -m "Updating Resume, `date`"
       - git remote add origin-resume https://$GITHUB_TOKEN@github.com/$DRONE_REPO.git > /dev/null 2>&1
-      - git push --set-upstream origin-resume master
+      - git push --set-upstream origin-resume gh-pages
     when:
       event:
       - tag
