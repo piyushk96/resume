@@ -36,9 +36,6 @@ steps:
     when:
       event:
       - tag
-      - promote
-      target:
-      - build
 
   - name: release
     image: plugins/github-release
