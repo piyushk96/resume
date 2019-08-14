@@ -18,21 +18,6 @@ steps:
     commands:
       - google-chrome --headless --disable-gpu --no-sandbox --disable-setuid-sandbox --print-to-pdf=./dist/Piyush_Kakkar_Resume.pdf ./dist/index.html
 
-  - name: release
-    image: plugins/github-release
-    settings:
-      api_key:
-        from_secret: github_token
-      files:
-        - dist/Piyush_Kakkar_Resume.pdf
-    when:
-      event:
-      - tag
-      - promote
-      target:
-      - build
-
-
   - name: commit-and-push-pdf
     image: docker:git
     environment:
@@ -53,3 +38,14 @@ steps:
       - promote
       target:
       - build
+
+  - name: release
+      image: plugins/github-release
+      settings:
+        api_key:
+          from_secret: github_token
+        files:
+          - dist/Piyush_Kakkar_Resume.pdf
+      when:
+        event:
+        - tag
