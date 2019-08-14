@@ -32,6 +32,8 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 :root {
 	--main-color: #2F5496;
 	--dark-gray: #2E2E2E;
