@@ -24,6 +24,7 @@ steps:
       GITHUB_TOKEN:
         from_secret: github_token
     commands:
+      - git fetch
       - git checkout gh-pages
       - mv dist/Piyush_Kakkar_Resume.pdf ./
       - git config user.email "kakkarpiyush96@gmail.com"
