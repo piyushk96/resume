@@ -46,7 +46,7 @@ steps:
       api_key:
         from_secret: github_token
       files:
-        - dist/Piyush_Kakkar_Resume.pdf
+        - Piyush_Kakkar_Resume.pdf
     when:
       event:
       - tag
